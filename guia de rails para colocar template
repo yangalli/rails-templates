@@ -1,5 +1,4 @@
 # Passos
-- Criar repositório no Unb CJR
 - Rails new template-name -T --database=postgresql
 - Rails db:setup
 - Colocar gem 'bootstrap', '~> 4.1.3'
