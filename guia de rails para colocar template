@@ -1,0 +1,47 @@
+# Passos
+- Criar repositório no Unb CJR
+- Rails new template-name -T --database=postgresql
+- Rails db:setup
+- Colocar gem 'bootstrap', '~> 4.1.3'
+- Mudar application.css para application.scss e importar bootstrap
+- Colocar gem 'jquery-rails'
+- Importar no application.js:
+//= require jquery3
+//= require popper
+//= require bootstrap-sprockets
+
+- rails g controller main index
+- root to: 'main#index'
+- criar pasta assets em vendor e colar toda pasta do template la
+- Copiar head do index.html do template para o head do application.html.erb
+- Copiar body todo do intex.html do template pro index.html.erb do main controller
+- Copiar tags <> do index.html do template para o final do application.html.erb
+- Alterar <link> tags para <%= stylesheet_link_tag %>
+- Alterar <> tags para <%= java_include_tag %>
+- Reiniciar server e ver
+- Adicionar no assets.rb Rails.application.config.assets.precompile << Proc.new { |path, fn| fn =~ /vendor\/assets/ }, reinicar server. GG?
+- Reiniciar server e ver
+
+rails g controller static_pages index
+rails s	
+
+<link rel="stylesheet" href="(.+)">
+<%= stylesheet_link_tag "$1" %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
